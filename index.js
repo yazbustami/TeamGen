@@ -99,7 +99,7 @@ const menu = () => {
     inquirer.prompt([
         {
             type:"list",
-            message: "Do you want to add another team member or creat the team?"
+            message: "Do you want to add another team member or creat the team?",
             choices: ["Add an Engineer", "Add an Intern", "Create Team"],
             name: "select",
 

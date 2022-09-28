@@ -11,5 +11,6 @@ Links:
 LIVE LINK: https://yazbustami.github.io/TeamGen/
 URL: https://github.com/yazbustami/TeamGen
 SC: <img width="875" alt="SCTG" src="https://user-images.githubusercontent.com/111784041/192671285-e915001b-0a2e-4792-b11a-475ea50423b2.png">
+Video Link: https://drive.google.com/file/d/12NvzfrRNeeCUbu7MjAI7SchEW907-5xf/view
 
 ## CODED BY YASMIN BUSTAMI

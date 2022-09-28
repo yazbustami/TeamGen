@@ -11,7 +11,7 @@ const createTeam = (team) => {
             </div>
             <ul class="list-group list-group-flush">
                     <li class="list-group-item bg-info">ID #: ${manager.id}</li>
-                    <li class="list-group-item bg-info">Email: <span id="email"><a href="mailto:${manager.email}">${manager.email}</a></span></li>"
+                    <li class="list-group-item bg-info">Email: <span id="email"><a href="mailto:${manager.email}">${manager.email}</a></span></li>
                     <li class="list-group-item bg-info">Office Number: ${manager.officeNumber}</li>
                 </ul>
             </div>`
@@ -27,7 +27,7 @@ const createEngineer = engineer => {
         </div>
         <ul class= "list-group list-group-flush">
             <li class="list-group-item bg-info">ID #: ${engineer.id}</li>
-            <li class="list-group-item bg-info">Email: <span id="email"><a href="mailto:${engineer.email}">${engineer.email}</a></span></li>"
+            <li class="list-group-item bg-info">Email: <span id="email"><a href="mailto:${engineer.email}">${engineer.email}</a></span></li>
             <li class="list-group-item bg-info">Github Username: <a href="https://github.com/${engineer.github}">${engineer.github}</a></li>
                      </ul>
                 </div>`
@@ -43,7 +43,7 @@ const createIntern = intern => {
         </div>
         <ul class= "list-group list-group-flush">
             <li class="list-group-item bg-info">ID #: ${intern.id}</li>
-            <li class="list-group-item bg-info">Email: <span id="email"><a href="mailto:${intern.email}">${intern.email}</a></span></li>"
+            <li class="list-group-item bg-info">Email: <span id="email"><a href="mailto:${intern.email}">${intern.email}</a></span></li>
             <li class="list-group-item bg-info">School: ${intern.school}</li>
          </ul>
     </div>`
@@ -76,7 +76,7 @@ module.exports = team => {
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/boostrap@5.20/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHN1/vI1Bx" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../Dist/team.css">
         <title>Engineering Team</title>
     </head>
@@ -85,7 +85,7 @@ module.exports = team => {
         <header>
             <h1 class="text-center m-2 p-2 header"> Engineering Team</h1>
         </header>
-        <main class="row justify-content-center">"
+        <main class="row justify-content-center">
         ${createTeam(team)}
         </main>
         </body>

@@ -17,8 +17,8 @@ describe("Intern", () => {
     it("Confirm email from getEmail method", () => {
         expect(intern.getEmail()).toBe("bustamiyasmin@gmail.com");
     })
-    it("Confirm Github from getSchool method", () => {
-        expect(intern.getSchool()).toBe("yazbustami");
+    it("Confirm school from getSchool method", () => {
+        expect(intern.getSchool()).toBe("Northwestern University");
     });
     it("Confirm role from getRole method", () => {
         expect(intern.getRole()).toBe("Intern");

@@ -1,4 +1,4 @@
-const creatTeam = (team) => {
+const createTeam = (team) => {
     // empty array html
     const html = [];
     // manager card

@@ -6,7 +6,7 @@ describe("Manager", () => {
         expect(manager.name).toBe("Yasmin");
         expect(manager.id).toBe("1234");
         expect(manager.email).toBe("bustamiyasmin@gmail.com");
-        expect(manager.officeNumber).toBe("99");
+        expect(manager.officeLevel).toBe("99");
     });
     it("Confirm name from getName method", () => {
         expect(manager.getName()).toBe("Yasmin");
@@ -17,8 +17,8 @@ describe("Manager", () => {
     it("Confirm email from getEmail method", () => {
         expect(manager.getEmail()).toBe("bustamiyasmin@gmail.com");
     })
-    it("Confirm Github from getOfficeNumber method", () => {
-        expect(manager.getOfficeNumber()).toBe("99");
+    it("Confirm Github from getOfficeLevel method", () => {
+        expect(manager.getOfficeLevel()).toBe("99");
     });
     it("Confirm role from getRole method", () => {
         expect(manager.getRole()).toBe("Manager");

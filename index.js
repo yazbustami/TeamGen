@@ -7,36 +7,37 @@ const Intern = require("./Lib/Intern");
 
 const members = [];
 
-const startManager = () => {
+const InitialManager = () => {
         inquirer.prompt([
             {
                 type: "input",
                 name:"name",
-                message: "what is the Manager's name?",
+                message: "Manager name?",
             },
             {
                 type: "input",
                 name:"id",
-                message: "what is the Manager's ID?",
+                message: "Manager ID?",
             },
             {
                 type: "input",
                 name:"email",
-                message: "what is the Manager's email?",
+                message: "Manager email?",
             },
             {
                 type: "input",
-                name:"officeNumber",
-                message: "what is the Manager's office number?",
+                name:"officeLevel",
+                message: "What floor is the Manager's office on?",
             },
         ])
         .then((answers) => {
-            const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
+            const manager = new Manager(answers.name, answers.id, answers.email, answers.officeLevel);
             members.push(manager);
             menu();
         })
 };
-const startEngineer = () => {
+
+const InitialEngineer = () => {
     inquirer.prompt([
         {
             type: "input",
@@ -65,7 +66,7 @@ const startEngineer = () => {
         menu();
     })
 };
-const startIntern = () => {
+const InitialIntern = () => {
     inquirer.prompt([
         {
             type: "input",
@@ -99,7 +100,7 @@ const menu = () => {
     inquirer.prompt([
         {
             type:"list",
-            message: "Do you want to add another team member or creat the team?",
+            message: "Do you want to add another team member or create the team?",
             choices: ["Add an Engineer", "Add an Intern", "Create Team"],
             name: "select",
 
@@ -107,22 +108,22 @@ const menu = () => {
         .then((answers) => {
         switch(answers.select){
             case "Add an Engineer":
-            startEngineer();
+            InitialEngineer();
             break;
 
         case "Add an Intern":
-            startIntern();
+            InitialIntern();
             break;
 
         default:
-            generateTeam();
+            InitiateTeam();
             break;
         }})
 };
 
-const generateTeam = () => {
+const InitiateTeam = () => {
     fs.writeFile("./Dist/index.html", team(members), (err) =>
     err ? console.log(err) : console.log ("succes!")); 
 };
 
-startManager();
+InitialManager();

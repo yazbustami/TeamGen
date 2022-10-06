@@ -14,3 +14,5 @@ SC: <img width="875" alt="SCTG" src="https://user-images.githubusercontent.com/1
 Video Link: https://drive.google.com/file/d/12NvzfrRNeeCUbu7MjAI7SchEW907-5xf/view
 
 ## CODED BY YASMIN BUSTAMI
+## had assistance from Study group including-Matthew Bronstein, Jordan Harris, Tyler Esselman, Leah Roman, & Joseph Ruiz. 
+## resubmitting with function, name, and a few other changes per Professor, October 4th, 2022. 

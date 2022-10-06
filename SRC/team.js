@@ -1,8 +1,8 @@
-const createTeam = (team) => {
+const BuildTeam = (team) => {
     // empty array html
     const html = [];
     // manager card
-    const createManager = manager => {
+    const BuildManager = manager => {
 
         let managerHTML = `<div class="card m-2 p-2 col-4" style="width: 18rem;">
             <div class="card-header bg-danger">
@@ -12,13 +12,13 @@ const createTeam = (team) => {
             <ul class="list-group list-group-flush">
                     <li class="list-group-item bg-info">ID #: ${manager.id}</li>
                     <li class="list-group-item bg-info">Email: <span id="email"><a href="mailto:${manager.email}">${manager.email}</a></span></li>
-                    <li class="list-group-item bg-info">Office Number: ${manager.officeNumber}</li>
+                    <li class="list-group-item bg-info">Office Number: ${manager.officeLevel}</li>
                 </ul>
             </div>`
             html.push(managerHTML);
 }
 // engineer card
-const createEngineer = engineer => {
+const BuildEngineer = engineer => {
     let engineerHtml = `
     <div class="card m-2 p-2 col-4" style="width: 18rem;">
         <div class="card-header bg-success">
@@ -34,7 +34,7 @@ const createEngineer = engineer => {
                 html.push(engineerHtml);
 }
 // intern card
-const createIntern = intern => {
+const BuildIntern = intern => {
     let internHtml =  `
     <div class="card m-2 p-2 col-4" style="width: 18rem;">
     <div class="card-header bg-secondary">
@@ -54,13 +54,13 @@ const createIntern = intern => {
 
 for (let i = 0; i < team.length; i++) {
     if (team[i].getRole() === "Manager"){
-        createManager(team[i]);
+        BuildManager(team[i]);
     }
     if (team[i].getRole() === "Engineer"){
-        createEngineer(team[i]);
+        BuildEngineer(team[i]);
     }
     if (team[i].getRole() === "Intern"){
-        createIntern(team[i]);
+        BuildIntern(team[i]);
 }
 }
 // html elements
@@ -83,10 +83,10 @@ module.exports = team => {
     
     <body>
         <header>
-            <h1 class="text-center m-2 p-2 header"> Engineering Team</h1>
+            <h1 class="text-center m-2 p-2 header">Yasmin's Team</h1>
         </header>
         <main class="row justify-content-center">
-        ${createTeam(team)}
+        ${BuildTeam(team)}
         </main>
         </body>
         </html>`;

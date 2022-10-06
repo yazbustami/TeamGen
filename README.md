@@ -10,8 +10,8 @@ Tests: Tests have been used for each class type, use npm test to run tests after
 Links: 
 LIVE LINK: https://yazbustami.github.io/TeamGen/
 URL: https://github.com/yazbustami/TeamGen
-SC: <img width="875" alt="SCTG" src="https://user-images.githubusercontent.com/111784041/192671285-e915001b-0a2e-4792-b11a-475ea50423b2.png">
-Video Link: https://drive.google.com/file/d/12NvzfrRNeeCUbu7MjAI7SchEW907-5xf/view
+SC: <img width="1323" alt="SC TEAMGEN UPD" src="https://user-images.githubusercontent.com/111784041/194227286-6895b2cb-c680-4245-a0f2-dc94af02e47d.png">
+Video Link: https://drive.google.com/file/d/188C82GGIzF2_MBqtizI8YxtUhPlVDy4S/view
 
 ## CODED BY YASMIN BUSTAMI
 ## had assistance from Study group including-Matthew Bronstein, Jordan Harris, Tyler Esselman, Leah Roman, & Joseph Ruiz. 

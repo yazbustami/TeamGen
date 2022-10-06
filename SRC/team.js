@@ -12,7 +12,7 @@ const BuildTeam = (team) => {
             <ul class="list-group list-group-flush">
                     <li class="list-group-item bg-info">ID #: ${manager.id}</li>
                     <li class="list-group-item bg-info">Email: <span id="email"><a href="mailto:${manager.email}">${manager.email}</a></span></li>
-                    <li class="list-group-item bg-info">Office Number: ${manager.officeLevel}</li>
+                    <li class="list-group-item bg-info">Office Floor: ${manager.officeLevel}</li>
                 </ul>
             </div>`
             html.push(managerHTML);
